@@ -9,9 +9,9 @@ let package = Package(
     .library(name: "FlexLayout", targets: ["FlexLayout"]),
     .library(name: "FlexLayoutYoga", targets: ["FlexLayoutYoga"]),
     .library(name: "FlexLayoutYogaKit", targets: ["FlexLayoutYogaKit"])
-    .library(name: "FlexLayout-Dynamic", type: .dynamic,  targets: ["FlexLayout"]),
-    .library(name: "FlexLayoutYoga-Dynamic", type: .dynamic,  targets: ["FlexLayoutYoga"]),
-    .library(name: "FlexLayoutYogaKit-Dynamic", type: .dynamic,  targets: ["FlexLayoutYogaKit"])
+    .library(name: "FlexLayout-Dynamic", type: .dynamic,  targets: ["FlexLayout-Dynamic"]),
+    .library(name: "FlexLayoutYoga-Dynamic", type: .dynamic,  targets: ["FlexLayoutYoga-Dynamic"]),
+    .library(name: "FlexLayoutYogaKit-Dynamic", type: .dynamic,  targets: ["FlexLayoutYogaKit-Dynamic"])
   ],
   dependencies: [
   ],
@@ -58,8 +58,6 @@ let package = Package(
         .headerSearchPath("./")
       ]
     ),
-
-
     .target(
       name: "FlexLayout-Dynamic",
       dependencies: ["FlexLayoutYoga-Dynamic", "FlexLayoutYogaKit-Dynamic"],
