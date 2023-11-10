@@ -1,3 +1,7 @@
+Dynamic SPM 지원을 위해 분리
+
+---
+
 <p align="center">
   <a href="https://github.com/layoutBox/FlexLayout"><img src="docs_markdown/images/flexlayout-logo-text.png" alt="FlexLayout" width="210"/></a>
 </p>
